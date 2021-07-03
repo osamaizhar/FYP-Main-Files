@@ -1,0 +1,8 @@
+prefix=/home/osamalegendary/robot_ws/install
+
+Name: moveit_simple_grasps
+Description: Description of moveit_simple_grasps
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

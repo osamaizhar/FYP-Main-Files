@@ -1,0 +1,10 @@
+<launch>
+
+  <arg name="robot" default="seven_dof_arm" />
+
+  <!-- Start the test -->
+  <node name="moveit_simple_grasps_server" pkg="moveit_simple_grasps" type="moveit_simple_grasps_server" output="screen">
+    <rosparam command="load" file="$(find ros_pkg)/config/$(arg robot)_grasp_data.yaml"/>
+  </node>
+
+</launch>

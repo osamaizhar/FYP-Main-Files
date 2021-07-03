@@ -1,0 +1,2 @@
+external_camera_tf:latest_config:moveit_ik_plugin_pkg:moveit_simple_grasps:myrobot_moveit_config:ros_pkg:sample_opencv_pkg
+-DCATKIN_DEVEL_PREFIX=/home/osama/robot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/osama/robot_ws/install -G Unix Makefiles

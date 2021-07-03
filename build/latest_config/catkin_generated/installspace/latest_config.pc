@@ -1,0 +1,8 @@
+prefix=/home/osama/robot_ws/install
+
+Name: latest_config
+Description: Description of latest_config
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

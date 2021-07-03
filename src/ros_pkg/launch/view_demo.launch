@@ -1,0 +1,11 @@
+<launch>
+ <arg name="model" />
+ <param name="robot_description" textfile="$(find ros_pkg)/urdf/six_dof_arm.urdf" />
+ <param name="use_gui" value="true"/>
+ <node name="joint_state_publisher" pkg="joint_state_publisher"
+type="joint_state_publisher" /><!--interacts with the joints of robot-->
+ <node name="robot_state_publisher" pkg="robot_state_publisher"
+type="state_publisher" /><!--publishes tf-->
+
+<node name="rviz" pkg="rviz" type="rviz" args="-d $(find ros_pkg)/urdf.rviz" required="true" />
+</launch>

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: ros_pkg
+    relative_path: urdf/six_dof_arm_v2.urdf
+    xacro_args: "--inorder "
+  SRDF:
+    relative_path: config/six_dof_arm.srdf
+  CONFIG:
+    author_name: osamalegendary
+    author_email: ahmedosamaizhar21@gmail.com
+    generated_timestamp: 1622916645

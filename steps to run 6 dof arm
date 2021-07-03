@@ -1,0 +1,34 @@
+
+STEPS TO RUN ROBOT WITH MOVEIT
+default command
+
+source robot_ws/devel/setup.bash
+
+1. roslaunch latest_config demo.launch
+
+2. sudo chmod a+rw /dev/ttyACM0
+
+3. rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
+
+
+STEPS TO RUN ROBOT WITH RVIZ
+
+1.  roslaunch ros_pkg view_demo.launch
+
+2.  sudo chmod a+rw /dev/ttyUSB0
+
+3.  rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
+
+
+
+PICK COMMAND
+
+rosrun ros_pkg pick/pick_2.py
+
+
+
+
+MOVEIT SETUP ASSISTANT
+
+1.
+roslaunch moveit_setup_assistant setup_assistant.launch

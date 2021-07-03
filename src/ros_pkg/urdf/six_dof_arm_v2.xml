@@ -1,0 +1,7 @@
+<robot file="six_dof_arm_v2.dae">
+        <Manipulator name="six_dof_arm">
+          <base>base_link</base>
+          <effector>claw_base</effector>
+        </Manipulator>
+</robot>
+

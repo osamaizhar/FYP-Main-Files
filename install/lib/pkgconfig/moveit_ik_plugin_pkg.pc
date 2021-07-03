@@ -1,0 +1,8 @@
+prefix=/home/osamalegendary/robot_ws/install
+
+Name: moveit_ik_plugin_pkg
+Description: Description of moveit_ik_plugin_pkg
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

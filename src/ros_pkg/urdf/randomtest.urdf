@@ -1,0 +1,59 @@
+<robot name="test_robot">
+<link name="claw_base">
+	<visual>
+         <geometry>
+          <mesh filename="package://ros_pkg/meshes/clawbase.stl"/>
+         </geometry>
+        </visual>
+        <collision>
+         <geometry>
+          <mesh filename="package://ros_pkg/meshes/clawbase.stl"/>
+         </geometry>
+        </collision>
+  </link>
+
+  <link name="claw_l">
+	<visual>
+         <geometry>
+          <mesh filename="package://ros_pkg/meshes/clawl.stl"/>
+         </geometry>
+        </visual>
+        <collision>
+         <geometry>
+          <mesh filename="package://ros_pkg/meshes/clawl.stl"/>
+         </geometry>
+        </collision>
+  </link>
+
+  <link name="claw_r">
+	<visual>
+         <geometry>
+          <mesh filename="package://ros_pkg/meshes/clawr.stl"/>
+         </geometry>
+        </visual>
+        <collision>
+         <geometry>
+          <mesh filename="package://ros_pkg/meshes/clawr.stl"/>
+         </geometry>
+        </collision>
+  </link>
+
+  
+
+  <joint name="joint6" type="revolute">
+    <axis xyz="0 1 0" />
+    <limit effort="1000.0" lower="-0.15" upper="0.30" velocity="1.0" />
+    <origin xyz="-0.027 0 0" rpy="0 0 0" />
+    <parent link="claw_base"/>
+    <child link="claw_l"/>
+  </joint>
+
+  <joint name="joint7" type="revolute">
+    <axis xyz="0 -1 0" />
+    <limit effort="1000.0" lower="-0.15" upper="0.30" velocity="1.0" />
+    <origin xyz="-0.027 0 0" rpy="0 0 0" />
+    <parent link="claw_base"/>
+    <child link="claw_r"/>
+  </joint>
+
+</robot>
