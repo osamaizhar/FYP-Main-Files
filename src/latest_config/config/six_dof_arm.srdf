@@ -83,61 +83,40 @@
         <joint name="shoulder_pitch_joint" value="0" />
         <joint name="wrist_pitch_joint" value="0" />
     </group_state>
-    <group_state name="p1" group="arm">
-        <joint name="elbow_pitch_joint" value="1.22" />
-        <joint name="gripper_roll_joint" value="1.0644" />
+    <group_state name="Default" group="arm">
+        <joint name="elbow_pitch_joint" value="0" />
+        <joint name="gripper_roll_joint" value="0" />
         <joint name="shoulder_pan_joint" value="0" />
-        <joint name="shoulder_pitch_joint" value="0.1502" />
-        <joint name="wrist_pitch_joint" value="1.1449" />
+        <joint name="shoulder_pitch_joint" value="0" />
+        <joint name="wrist_pitch_joint" value="0" />
+    </group_state>
+    <group_state name="p1" group="arm">
+        <joint name="elbow_pitch_joint" value="-0.12" />
+        <joint name="gripper_roll_joint" value="0" />
+        <joint name="shoulder_pan_joint" value="0" />
+        <joint name="shoulder_pitch_joint" value="1.02" />
+        <joint name="wrist_pitch_joint" value="-1.26" />
     </group_state>
     <group_state name="p2" group="arm">
-        <joint name="elbow_pitch_joint" value="1.1074" />
-        <joint name="gripper_roll_joint" value="1.2373" />
-        <joint name="shoulder_pan_joint" value="-1.6322" />
-        <joint name="shoulder_pitch_joint" value="0.3378" />
-        <joint name="wrist_pitch_joint" value="1.3702" />
-    </group_state>
-    <group_state name="s1" group="arm">
-        <joint name="elbow_pitch_joint" value="0.22" />
-        <joint name="gripper_roll_joint" value="-0.34" />
-        <joint name="shoulder_pan_joint" value="0.32" />
-        <joint name="shoulder_pitch_joint" value="0.2" />
-        <joint name="wrist_pitch_joint" value="0" />
-    </group_state>
-    <group_state name="s2" group="arm">
-        <joint name="elbow_pitch_joint" value="0.22" />
-        <joint name="gripper_roll_joint" value="-0.34" />
-        <joint name="shoulder_pan_joint" value="1.09" />
-        <joint name="shoulder_pitch_joint" value="0.3" />
-        <joint name="wrist_pitch_joint" value="0" />
-    </group_state>
-    <group_state name="s3" group="arm">
-        <joint name="elbow_pitch_joint" value="0.22" />
-        <joint name="gripper_roll_joint" value="-0.34" />
-        <joint name="shoulder_pan_joint" value="0.15" />
-        <joint name="shoulder_pitch_joint" value="0.3" />
-        <joint name="wrist_pitch_joint" value="0" />
-    </group_state>
-    <group_state name="s0" group="arm">
-        <joint name="elbow_pitch_joint" value="0" />
+        <joint name="elbow_pitch_joint" value="-0.12" />
         <joint name="gripper_roll_joint" value="0" />
         <joint name="shoulder_pan_joint" value="0" />
         <joint name="shoulder_pitch_joint" value="0" />
-        <joint name="wrist_pitch_joint" value="0" />
+        <joint name="wrist_pitch_joint" value="-1.26" />
     </group_state>
-    <group_state name="s4" group="arm">
-        <joint name="elbow_pitch_joint" value="0" />
+    <group_state name="p3" group="arm">
+        <joint name="elbow_pitch_joint" value="-0.12" />
         <joint name="gripper_roll_joint" value="0" />
-        <joint name="shoulder_pan_joint" value="0.98" />
-        <joint name="shoulder_pitch_joint" value="0" />
-        <joint name="wrist_pitch_joint" value="0" />
+        <joint name="shoulder_pan_joint" value="1.708" />
+        <joint name="shoulder_pitch_joint" value="0.66" />
+        <joint name="wrist_pitch_joint" value="-1.26" />
     </group_state>
-    <group_state name="final1" group="arm">
-        <joint name="elbow_pitch_joint" value="-0.85" />
-        <joint name="gripper_roll_joint" value="0.76" />
-        <joint name="shoulder_pan_joint" value="-1.11" />
-        <joint name="shoulder_pitch_joint" value="0.7" />
-        <joint name="wrist_pitch_joint" value="-1.45" />
+    <group_state name="p4" group="arm">
+        <joint name="elbow_pitch_joint" value="-0.12" />
+        <joint name="gripper_roll_joint" value="0" />
+        <joint name="shoulder_pan_joint" value="1.708" />
+        <joint name="shoulder_pitch_joint" value="0.92" />
+        <joint name="wrist_pitch_joint" value="-1.52" />
     </group_state>
     <!--END EFFECTOR: Purpose: Represent information about an end effector.-->
     <end_effector name="gripper" parent_link="claw_base" group="gripper" parent_group="arm" />

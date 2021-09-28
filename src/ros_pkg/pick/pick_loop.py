@@ -55,56 +55,57 @@ class TestPick():
         # clean the scene
         #scene.remove_world_object("table")
         #scene.remove_world_object("part")
-        print("going to pickup pose")
+        while True:
+            print("going to pickup pose")
+            
+            #right_gripper.set_named_target("open")
+            #right_gripper.go(wait=True)
+
+            right_arm.set_named_target("p1")
+            right_arm.go(wait=True)
         
-        right_gripper.set_named_target("open")
-        right_gripper.go(wait=True)
+            #right_gripper.set_named_target("close")
+            #right_gripper.go(wait=True)
 
-        right_arm.set_named_target("s1")
-        right_arm.go(wait=True)
-      
-        right_gripper.set_named_target("close")
-        right_gripper.go(wait=True)
+            rospy.sleep(1)
+            #while True:
+            count=count+1
+            print("p2",count)
+            right_arm.set_named_target("p2")
+            right_arm.go(wait=True)
 
-        rospy.sleep(1)
-        #while True:
-        count=count+1
-        print("s2",count)
-        right_arm.set_named_target("s2")
-        right_arm.go(wait=True)
+            print("p3",count)
+            rospy.sleep(1)
+            right_arm.set_named_target("p3")
+            right_arm.go(wait=True)
+            rospy.sleep(1)
 
-        print("s3",count)
-        rospy.sleep(1)
-        right_arm.set_named_target("s3")
-        right_arm.go(wait=True)
-        rospy.sleep(1)
-
+            
+            #right_gripper.set_named_target("open")
+            #right_gripper.go(wait=True)
         
-        #right_gripper.set_named_target("open")
-        #right_gripper.go(wait=True)
-      
-        #rospy.sleep(1)
-   
-      
-        #start_pose = PoseStamped()
-        #start_pose.header.frame_id = FIXED_FRAME
-       
-        #rospy.sleep(1)
+            #rospy.sleep(1)
+    
         
+            #start_pose = PoseStamped()
+            #start_pose.header.frame_id = FIXED_FRAME
+        
+            #rospy.sleep(1)
+            
 
 
 
-	#right_arm.set_pose_target(next_pose)
-        #right_gripper.set_named_target("close")
-        #right_gripper.go(wait=True)
+        #right_arm.set_pose_target(next_pose)
+            #right_gripper.set_named_target("close")
+            #right_gripper.go(wait=True)
 
-        #rospy.sleep(1)
+            #rospy.sleep(1)
 
-        #right_arm.set_named_target("straight leg")
-        #right_arm.go(wait=True)
-        print("end of pose")
-        rospy.spin()
-        roscpp_shutdown()
+            #right_arm.set_named_target("straight leg")
+            #right_arm.go(wait=True)
+            #print("end of pose")
+            #rospy.spin()
+            #roscpp_shutdown()
         
        
  

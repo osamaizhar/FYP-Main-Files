@@ -1,5 +1,6 @@
 controller_list:
   - name: fake_arm_controller
+    type: $(arg execution_type)
     joints:
       - shoulder_pan_joint
       - shoulder_pitch_joint
@@ -7,6 +8,7 @@ controller_list:
       - wrist_pitch_joint
       - gripper_roll_joint
   - name: fake_gripper_controller
+    type: $(arg execution_type)
     joints:
       - joint6
       - joint7

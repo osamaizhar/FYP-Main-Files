@@ -6,9 +6,9 @@ source robot_ws/devel/setup.bash
 
 1. roslaunch latest_config demo.launch
 
-2. sudo chmod a+rw /dev/ttyACM0
+2. sudo chmod a+rw /dev/ttyUSB0
 
-3. rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
+3.rosrun rosserial_python serial_node.py _port:=/dev/ttyUSB0 _baud:=115200
 
 
 STEPS TO RUN ROBOT WITH RVIZ
@@ -21,8 +21,10 @@ STEPS TO RUN ROBOT WITH RVIZ
 
 
 
-PICK COMMAND
 
+GIVING EXECUTABLE PERMISSIONS
+chmod +rwx filename to add permissions.
+PICK COMMAND
 rosrun ros_pkg pick/pick_2.py
 
 
